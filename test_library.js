@@ -28,8 +28,15 @@ var expect = {
             throw new Error("Assertion failed: " + value + " does not contain " + strs);
         } else {
             console.log('string: ' + strs + ' was found!!! in object of ' + value + ' :)')
+        }   
+    },
+
+    toEqual: function(input, matcher) {
+        if (!input === matcher) {
+            throw new Error("Assertion failed: " + input + " does not match " + mather);
+            } else {
+        console.log('Match')
         }
-        
-    }
+    },
 
 };
