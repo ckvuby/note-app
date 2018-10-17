@@ -19,16 +19,17 @@ ViewNote.prototype.noteToWeb = function() {
         })
     })
     console.log(y)
-    var open = '<li>'
-    var close = '</li>'
+    var open = '<li><div>'
+    var close = '</div</li>'
      y.forEach(function(j) {
         console.log(open + j + close)
         x.push(open + j + close)
      })
-     var start = '<ul><div>'
-     var end = '</div></ul>'
+     var start = '<ul>'
+     var end = '</ul>'
      tt = x.join("")
      ss = start + tt + end
     console.log(x)
     console.log(ss)
+    return ss
 };
