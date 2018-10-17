@@ -10,7 +10,6 @@
 
 
 Note.prototype.add = function(text) {
-    // console.log(text)
     this._noteList.push(text);
 
 };

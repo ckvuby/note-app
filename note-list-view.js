@@ -9,6 +9,7 @@
 
 ViewNote.prototype.noteToWeb = function() {
     y = []
+    x = []
     console.log('this is note list:', this.list)
     this.list._noteStore.forEach(function(note) {
         console.log('this is each element in the note list array', note)
@@ -18,10 +19,16 @@ ViewNote.prototype.noteToWeb = function() {
         })
     })
     console.log(y)
-    // i = ""
-    //  noteTable.forEach(function(j) {
-    //     i + '<li>' + j + '</li>'
-    //  })
-    //  console.log('<ul>' + i + '</ul>')
-    //  return '<ul>' + i + '</ul>'
+    var open = '<li>'
+    var close = '</li>'
+     y.forEach(function(j) {
+        console.log(open + j + close)
+        x.push(open + j + close)
+     })
+     var start = '<ul><div>'
+     var end = '</div></ul>'
+     tt = x.join("")
+     ss = start + tt + end
+    console.log(x)
+    console.log(ss)
 };
