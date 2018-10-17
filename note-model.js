@@ -8,6 +8,7 @@
     exports.Note = Note;
 })(this);
 
+
 Note.prototype.add = function(text) {
     // console.log(text)
     this._noteList.push(text);
@@ -16,5 +17,4 @@ Note.prototype.add = function(text) {
 
 Note.prototype.displayNotes = function () {
     return this._noteList
-} 
-
+};

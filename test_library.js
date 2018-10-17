@@ -21,5 +21,15 @@ var expect = {
         } else {
             console.log('test passed')
         }
+    },
+
+    toIncludeStr: function(value, strs) {
+        if (!(value.find((str) => str === strs))) {
+            throw new Error("Assertion failed: " + value + " does not contain " + strs);
+        } else {
+            console.log('string: ' + strs + ' was found!!! in object of ' + value + ' :)')
+        }
+        
     }
+
 };

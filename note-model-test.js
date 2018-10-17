@@ -14,7 +14,6 @@ addNoteText();
 function displayNotes() {
     var note = new Note();
     note.add("My fav language is JS")
-    // console.log(note.displayNotes()[0])
     expect.isTrue(note.displayNotes()[0] === "My fav language is JS");
 }; 
 displayNotes();
